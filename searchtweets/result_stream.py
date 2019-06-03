@@ -214,7 +214,7 @@ class ResultStream:
                 yield self._tweet_func(tweet)
                 self.total_results += 1
 
-            if self.next_token and self.total_results < self.max_results and self.n_requests <= self.max_requests:
+            if self.next_token and self.total_results < self.max_results and self.n_requests < self.max_requests:
                 self.rule_payload = merge_dicts(self.rule_payload,
                                                 {"next": self.next_token})
                 logger.info("paging; total requests read so far: {}"
