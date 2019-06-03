@@ -28,17 +28,11 @@ Features
 Installation
 ============
 
-The ``searchtweets`` library is on Pypi:
-
-.. code:: bash
-
-   pip install searchtweets
-
 Or you can install the development version locally via
 
 .. code:: bash
 
-   git clone https://github.com/twitterdev/search-tweets-python
+   git clone https://github.com/UtrechtUniversity/search-tweets-python
    cd search-tweets-python
    pip install -e .
 
